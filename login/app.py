@@ -78,5 +78,46 @@ def login():
         else:
             return "Incorrect username/password!", "error"
 
+@app.route('/logout')
+def logout():
+    session.pop("loggedin", None)
+    session.pop("id", None)
+    session.pop("username", None)
+    return redirect(url_for('login'))
+
+@app.route('/register', methods = ['GET', "POST"])
+def register():
+    if request.method == "POST":
+        username =request.form["username"]
+        password = request.form["password"]
+        email = request.form["email"]
+        first_name = request.form["first_name"]
+        last_name = request.form["last_name"]
+
+# check if the username or email already exists
+        user_exists = UserSignup.query.filter_by(username= username).first()
+        email_exists = UserSignup.query.filter_by(email=email).first()
+
+        if user_exists:
+            return "Account already exists", "error"
+        elif email_exists:
+            return "Email already exists", "error"
+        elif not username or not password or not email or not first_name or not last_name:
+            return "Please fill out the entire form", "error"
+        elif not re.match(r'[^@]+@[^@]+\.[^@]+', email) or not re.match(r'[A-Za-z0-9]+', username):
+            return "Invalid email address or username", "error"
+        else:
+        # hashing the password before storing it in the database
+            password_hash = generate_password_hash(password, method = "sha256")
+            new_user = UserSignup(username=username, password=password_hash, email=email, first_name=first_name, last_name=last_name)
+            db.session.add(new_user)
+            db.session.commit()
+
+        return "You have successfully registered!"
+
+    # Redirect the user, whether the registration was successful or not
+    return redirect(url_for("home"))
+
+
 if __name__ == "__main__":
     app.run()
