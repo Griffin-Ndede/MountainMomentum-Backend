@@ -25,6 +25,8 @@ class Booking(db.Model):
     updated_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
 class Hike(db.Model):
+   
+   __tablename__ = "Hike"
    id = db.Column(db.Integer, primary_key=True)
    name = db.Column(db.String(), nullable=False, unique=True)
    description = db.Column(db.String(), nullable=False)

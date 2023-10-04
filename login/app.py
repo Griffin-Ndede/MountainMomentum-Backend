@@ -4,23 +4,28 @@ import re
 from flask_migrate import Migrate, migrate
 from werkzeug.security import generate_password_hash, check_password_hash
 
+from models import UserSignup, Hike
+
 # creating a flask application instance
-app = Flask(__name__)
+def create_app():
+    app = Flask(__name__)
+
+# secret key for sessions
+    app.secret_key = "mountainmomentum"
+
 # specifying database file name
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///mountainmomentum.db"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///mountainmomentum.db"
 
 # initializing the database with flask application
-db.init_app(app)
+    db.init_app(app)
+    return app
 
-from models import UserSignup, Hike
+app = create_app()
 # creating the database tables with flask application context
 with app.app_context():
     db.create_all()
 # Setting up the migrations
 migrate = Migrate(app, db)
-
-# secret key for sessions
-app.secret_key = "mountainmomentum"
 
 # defining the routes
 @app.route('/')
