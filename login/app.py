@@ -36,12 +36,13 @@ def home():
 def hikes():
     if request.method == 'POST':
         name = request.form['name']
+        image = request.form["image"]
         description = request.form['description']
         distance = request.form['distance']
         difficulty = request.form['difficulty']
 
         # saving new hiking trails to the database
-        new_hike = Hike(name=name, description=description, distance=distance, difficulty=difficulty)
+        new_hike = Hike(name=name, image=image, description=description, distance=distance, difficulty=difficulty)
         db.session.add(new_hike)
         db.session.commit()
 
@@ -54,6 +55,7 @@ def hikes():
             {
                 "id":hike.id,
                 "name":hike.name,
+                "image": hike.image,
                 "description":hike.description,
                 "distance": hike.distance,
                 "difficulty": hike.difficulty,
