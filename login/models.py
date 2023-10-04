@@ -6,14 +6,15 @@ db = SQLAlchemy()
 
 # defining the models
 class UserSignup(db.Model):
+
+    __tablename__ = "UserSignup"
     id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(), nullable=False)
     first_name = db.Column(db.String(), nullable=False, unique=True)
     last_name = db.Column(db.String(), nullable=False)
     email = db.Column(db.String(), nullable=False)
     password = db.Column(db.String(), nullable=False)    
-    username = db.Column(db.String(), nullable=False)
     created_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-    updated_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
 class Booking(db.Model):
     id = db.Column(db.Integer, primary_key=True)
