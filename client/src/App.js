@@ -2,25 +2,30 @@
 import React from 'react';
 import './App.css';
 import Home from './components/Home.js';
-import LoginAndRegistration from './components/Loginandregistration'; 
-import Packages from './components/Package';
+// import LoginAndRegistration from './components/Loginandregistration'; 
 import PackageDetails from './components/PackageDetails.js';
 import Navbar from "./components/NavBar"
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import AuthenticationPage from './components/AuthPage';
+import Footer from './components/Footer';
+import About from './components/About';
+
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
+    <Navbar/>
       <div>
-      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<LoginAndRegistration />} />
-        <Route path="/packages" element={<Packages />} />
+        {/* <Route path="/login" element={<LoginAndRegistration />} /> */}
+        <Route path='/login' element= {<AuthenticationPage/>}/>
         <Route path="/package/:id" element={<PackageDetails />} />
+        <Route path='/about' element= {<About/>}/>
       </Routes>
       </div>
-    </Router>
+      <Footer/>
+    </BrowserRouter>
   );
 }
 

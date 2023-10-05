@@ -7,27 +7,55 @@ app = create_app()
 with app.app_context():
     print("seeding hikes...")
     hike_data = [
-        {
-            "name": "Karura Forest",
-            "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fhips.hearstapps.com%2Fhmg-prod%2Fimages%2Fwoman-hiking-at-red-rock-canyon-during-sunset-with-royalty-free-image-1601478369.jpg%3Fcrop%3D0.671xw%3A1.00xh%3B0.137xw%2C0%26resize%3D1200%3A*&tbnid=m-mwFx3NkHSnRM&vet=12ahUKEwj4zcuund2BAxUjrEwKHTnVDOYQMygAegQIARBu..i&imgrefurl=https%3A%2F%2Fwww.runnersworld.com%2Ftraining%2Fa34222588%2Fhow-to-start-hiking%2F&docid=zSEiegGLlZl6SM&w=1200&h=1192&q=hiking&ved=2ahUKEwj4zcuund2BAxUjrEwKHTnVDOYQMygAegQIARBu",
-            "description": "Karura has a lot of waterfalls",
-            "distance": "50",
-            "difficulty": "Beginner friendly"
-        },
-        {
-            "name": "Ngong hills",
-            "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fhips.hearstapps.com%2Fhmg-prod%2Fimages%2Fwoman-hiking-at-red-rock-canyon-during-sunset-with-royalty-free-image-1601478369.jpg%3Fcrop%3D0.671xw%3A1.00xh%3B0.137xw%2C0%26resize%3D1200%3A*&tbnid=m-mwFx3NkHSnRM&vet=12ahUKEwj4zcuund2BAxUjrEwKHTnVDOYQMygAegQIARBu..i&imgrefurl=https%3A%2F%2Fwww.runnersworld.com%2Ftraining%2Fa34222588%2Fhow-to-start-hiking%2F&docid=zSEiegGLlZl6SM&w=1200&h=1192&q=hiking&ved=2ahUKEwj4zcuund2BAxUjrEwKHTnVDOYQMygAegQIARBu",
-            "description": "Ngong hills has beautiful views",
-            "distance": "30",
-            "difficulty": "Veteran"
-        },
          {
-            "name": "Longonot ",
-            "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fhips.hearstapps.com%2Fhmg-prod%2Fimages%2Fwoman-hiking-at-red-rock-canyon-during-sunset-with-royalty-free-image-1601478369.jpg%3Fcrop%3D0.671xw%3A1.00xh%3B0.137xw%2C0%26resize%3D1200%3A*&tbnid=m-mwFx3NkHSnRM&vet=12ahUKEwj4zcuund2BAxUjrEwKHTnVDOYQMygAegQIARBu..i&imgrefurl=https%3A%2F%2Fwww.runnersworld.com%2Ftraining%2Fa34222588%2Fhow-to-start-hiking%2F&docid=zSEiegGLlZl6SM&w=1200&h=1192&q=hiking&ved=2ahUKEwj4zcuund2BAxUjrEwKHTnVDOYQMygAegQIARBu",
-            "description": "Longonot is the biggest crater in kenya",
-            "distance": "30",
-            "difficulty": "Moderate"
-        }
+    "name": "Mount Kenya",
+    "image": "https://images.unsplash.com/photo-1531804051321-284e8f40e062",
+    "description": "Mount Kenya is the highest mountain in Kenya and the second-highest in Africa. It offers a challenging and rewarding hiking experience. The diverse landscapes include glaciers, alpine meadows, and dense forests.",
+    "distance": "60km",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "Aberdare Range",
+    "image": "https://images.unsplash.com/photo-1555704475-952d817ce5a2",
+    "description": "The Aberdare Range is known for its lush forests, waterfalls, and wildlife. Hiking here allows you to explore the beautiful moorlands and spot various animal species, including elephants and leopards.",
+    "distance": "45km",
+    "difficulty": "Intermediate"
+  },
+  {
+    "name": "Hell's Gate National Park",
+    "image": "https://images.unsplash.com/photo-1550863313-8f46a9eb5e92",
+    "description": "Hell's Gate National Park is famous for its stunning scenery and unique rock formations. You can hike through the dramatic canyons and enjoy views of geothermal activity.",
+    "distance": "15km",
+    "difficulty": "Beginner friendly"
+  },
+  {
+    "name": "Mount Elgon",
+    "image": "https://images.unsplash.com/photo-1574219220047-45ad7b964711",
+    "description": "Mount Elgon is an extinct volcano on the border of Kenya and Uganda. Hiking here takes you through pristine forests, caves, and waterfalls. The caldera at the summit is a must-see.",
+    "distance": "40km",
+    "difficulty": "Intermediate"
+  },
+  {
+    "name": "Aberdare Range",
+    "image": "https://images.unsplash.com/photo-1555704475-952d817ce5a2",
+    "description": "The Aberdare Range is known for its lush forests, waterfalls, and wildlife. Hiking here allows you to explore the beautiful moorlands and spot various animal species, including elephants and leopards.",
+    "distance": "45km",
+    "difficulty": "Intermediate"
+  },
+  {
+    "name": "Hell's Gate National Park",
+    "image": "https://images.unsplash.com/photo-1550863313-8f46a9eb5e92",
+    "description": "Hell's Gate National Park is famous for its stunning scenery and unique rock formations. You can hike through the dramatic canyons and enjoy views of geothermal activity.",
+    "distance": "15km",
+    "difficulty": "Beginner friendly"
+  },
+  {
+    "name": "Mount Elgon",
+    "image": "https://images.unsplash.com/photo-1574219220047-45ad7b964711",
+    "description": "Mount Elgon is an extinct volcano on the border of Kenya and Uganda. Hiking here takes you through pristine forests, caves, and waterfalls. The caldera at the summit is a must-see.",
+    "distance": "40km",
+    "difficulty": "Intermediate"
+  }
     ]
     for data in hike_data:
         hike = Hike(**data)

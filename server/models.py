@@ -28,7 +28,7 @@ class Hike(db.Model):
    
    __tablename__ = "Hike"
    id = db.Column(db.Integer, primary_key=True)
-   name = db.Column(db.String(), nullable=False, unique=True)
+   name = db.Column(db.String(), nullable=False)
    image = db.Column(db.String(), nullable=False)
    description = db.Column(db.String(), nullable=False)
    distance = db.Column(db.String(), nullable=False)

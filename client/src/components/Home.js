@@ -20,7 +20,7 @@ const [hikes, setHikes] = useState([]);
       <section className="relative bg-blueGray-50">
         <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
           <div className="absolute top-0 w-full h-full bg-center bg-cover" style={{
-            backgroundImage: "url('./images')"
+            backgroundImage: "url('/images/background1.jpeg')"
           }}>
             <span id="blackOverlay" className="w-full h-full absolute opacity-75 bg-black"></span>
           </div>
@@ -92,17 +92,51 @@ const [hikes, setHikes] = useState([]);
       </section>
       <section>
         <div className='hikes'>
-          <ul>
+          <ul id='cards'>
             {hikes.map((hike) =>(
               <li id='details' key={hike.id}>
-                <h3>Name: {hike.name}</h3>
+                <img src ={hike.image} alt = {hike.name}></img>
+                <h3>{hike.name}</h3>
                 <h3>Distance: {hike.distance}</h3>
                 <h3>Difficulty: {hike.difficulty}</h3>
-                <img src ={hike.image} alt = {hike.name}></img>
               </li>
             ))}
           </ul>
         </div>
+      </section>
+      <section id='footer'>
+      <footer className="footer">
+      <div className="footer-content">
+        <div className="footer-section about">
+          <h2>About Us</h2>
+          <p>
+          We are passionate hikers, adventurers, and nature enthusiasts. 
+          Our mission is to inspire and guide you through unforgettable hiking experiences, 
+          from breathtaking trails to expert tips. 
+          Join us on a journey to discover the wonders of the great outdoors.
+          </p>
+        </div>
+        <div className="footer-section contact">
+          <h2>Contact Us</h2>
+          <address>
+            <p>Email: mountainmomentum@gmail.com</p>
+            <p>Phone: +2547 123 456 789</p>
+          </address>
+        </div>
+        <div className="footer-section links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div className="footer-bottom">
+        <p>&copy; 2023 Mountain Momentum</p>
+      </div>
+    </footer>
       </section>
     </div>
   );

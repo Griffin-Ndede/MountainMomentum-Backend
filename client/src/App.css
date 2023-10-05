@@ -132,3 +132,139 @@
     color: #f18e33;
   }
   
+  /* Style the container for the list of hikes */
+.hikes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Start from left to right */
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Style the ul as a flex container */
+#cards {
+  list-style: none; /* Remove default list bullets */
+  display: flex; /* Make it a flex container */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 30px; /* Add space between items */
+}
+
+/* Style each individual card-like element */
+#details {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 20px;
+  flex: 0 0 calc(33.33% - 20px); /* Adjust the width as needed for your layout */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  min-width: 250px; /* Adjust as needed to fit content */
+}
+
+#details:hover {
+  transform: scale(1.02); /* Add a slight scale effect on hover */
+}
+
+/* Style the image within each card */
+#details img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Style the headings within each card */
+#details h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: light;
+}
+ /* styling the login and sign */
+ input[type=text], button, input[type=password]{
+  margin:15px;
+  padding: 7.5px 10px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  border: transparent;
+  background-color: white;
+}
+#signin, #signup, #authpage{
+  background-color: #f18e33;
+  border-radius: 50px;
+  width: 400px;
+  padding: 10px;
+}
+#authpage{
+  margin: auto;
+  padding: 10px;
+}
+h1, p{
+  color: white;
+}
+
+/* Footer.css */
+
+.footer {
+  background-color: #f18e33;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h2 {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.footer-section p {
+  font-size: 0.9rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+/* About.css */
+
+.about-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.section-heading {
+  color: blue;
+  text-decoration: underline;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
