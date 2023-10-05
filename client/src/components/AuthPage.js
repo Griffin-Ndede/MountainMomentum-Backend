@@ -10,6 +10,7 @@ function AuthenticationPage() {
   };
 
   return (
+    <div className="loginpage">
     <div id="authpage">
       {isSignIn ? <Signin /> : <Signup />}
       <button onClick={togglePage}>
@@ -18,6 +19,8 @@ function AuthenticationPage() {
           : "Already have an account? Log in"}
       </button>
     </div>
+    </div>
+    
   );
 }
 

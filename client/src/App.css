@@ -189,14 +189,22 @@
   background-color: white;
 }
 #signin, #signup, #authpage{
-  background-color: #f18e33;
+  background-color: transparent;
   border-radius: 50px;
   width: 400px;
   padding: 10px;
+
+}
+.loginpage{
+  background-image: url('https://www.datocms-assets.com/55179/1647273702-mt-kenya.jpg?fit=clip&fm=webp&h=900&w=1200") no-repeat center center/cover');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 #authpage{
   margin: auto;
   padding: 10px;
+  
 }
 h1, p{
   color: white;
@@ -204,9 +212,12 @@ h1, p{
 
 /* Footer.css */
 
-.footer {
+#footer {
   background-color: #f18e33;
   color: #fff;
+}
+
+.footer {
   padding: 30px 0;
 }
 
@@ -215,16 +226,17 @@ h1, p{
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 20px;
-  max-width: 100px;
+  max-width: 1000px; /* Adjust the maximum width as needed */
   margin: 0 auto;
 }
 
 .footer-section {
   flex: 1;
+  padding: 20px; /* Added padding for better spacing */
 }
 
 .footer-section h2 {
-  color: black;
+  color: black; /* Changed text color to black */
   font-size: 1.5rem;
 }
 
@@ -248,7 +260,14 @@ h1, p{
 
 .footer-bottom {
   text-align: center;
+  padding: 10px 0; /* Adjusted padding for better spacing */
 }
+
+.footer-bottom p {
+  color: #fff;
+  font-size: 0.8rem; /* Adjusted font size for better readability */
+}
+
 
 /* AboutUs.css */
 
@@ -279,8 +298,8 @@ body {
   padding: 20px;
   border-radius: 10px;
   margin: 10px;
-  /* width: 300px; */
-  flex: 0 0 calc(33.333% - 20px); 
+  width: 350px;
+  /* flex: 0 0 calc(33.333% - 20px);  */
   /* Adjust width as needed for horizontal layout  */
 }
 
@@ -301,4 +320,6 @@ body {
   font-size: 1rem;
   margin-top: 10px;
 }
-
+.lead{
+  color: black;
+}
