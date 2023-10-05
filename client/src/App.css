@@ -1,0 +1,134 @@
+/* NavBar.css */
+
+.navbar {
+    color: #f18e33; /* Set the text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* position: fixed; */
+  }
+  
+  .logo-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 50px;
+  }
+  
+  .nav-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #f18e33;
+    /* font-weight: lighter; */
+    font-size: 16px;
+  }
+  
+  .login a {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login a svg {
+    margin-right: 5px;
+  }
+  
+  /* LoginAndRegistration.css */
+
+/* Style the container div */
+.login-registration-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("./images/background1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+  }
+  
+  /* Style the form section */
+  .login-registration-container > div {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: auto;
+  }
+  
+  /* Style the form header */
+  .login-registration-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the input containers */
+  .input-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the labels */
+  .input-container label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: black;
+  }
+  
+  /* Style the input fields */
+  .input-field {
+    width: auto;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    align-items: center;
+  }
+  
+  /* Style the submit button */
+  .submit-button {
+    background-color: #f18e33;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #f18e33;
+  }
+  
+  /* Style the toggle button */
+  .toggle-button {
+    background-color: transparent;
+    border: none;
+    color: #f18e33;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .toggle-button:hover {
+    color: #f18e33;
+  }
+  

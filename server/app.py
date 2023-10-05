@@ -3,7 +3,7 @@ from models import db
 import re
 from flask_migrate import Migrate, migrate
 from werkzeug.security import generate_password_hash, check_password_hash
-
+from flask_cors import CORS
 from models import UserSignup, Hike
 
 # creating a flask application instance
@@ -27,6 +27,7 @@ with app.app_context():
 # Setting up the migrations
 migrate = Migrate(app, db)
 
+CORS(app)
 # defining the routes
 @app.route('/')
 def home():
