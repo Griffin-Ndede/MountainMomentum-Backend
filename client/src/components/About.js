@@ -1,84 +1,52 @@
 import React from 'react';
-
-function About() {
+function AboutUs() {
   return (
-    <div className="about-container">
-      <h1>About Our Hiking Website</h1>
-      <p>
-        Welcome to our hiking website! We are passionate about exploring the great outdoors and sharing our love for hiking with fellow adventurers.
-      </p>
-      <p>
-        Our mission is to provide valuable information, resources, and inspiration for hikers of all levels. Whether you're a seasoned hiker or just getting started, we're here to help you plan your next adventure and discover new trails.
-      </p>
-      <p>
-        Join us on a journey to explore the beauty of nature, experience the thrill of the trails, and connect with a community of outdoor enthusiasts.
-      </p>
+    <div>
+      <div className="jumbotron">
+        <div className="container">
+          <h1 className="display-4">Welcome to Mountain Momentum</h1>
+          <p className="lead">Explore nature, connect with fellow hikers, and experience unforgettable adventures with us.</p>
+        </div>
+      </div>
+      <div className="container">
+        <h2 className="text-center mb-4">ABOUT US</h2>
+        <p className="lead">Mountain Momentum is a company dedicated to keeping Kenyans connected through traversing our beautiful land. We strive to help our clients grow and achieve new heights by ensuring that they are connected to enable them to participate in the exponential opportunities for innovation in the vibrant Kenyan community.</p>
+      </div>
+      <div className="container">
+        <h2 className="text-center mb-4">OUR TEAM</h2>
+        <p className="lead">Our team is dedicated to providing exemplary service delivery to our clients. We believe in treating each and every customer like a V.I.P and ensuring their needs are met in a timely manner. We assure the quality of service delivery while maintaining industry standards.</p>
+        <div className="row">
+        <div className="team-members">
+  <div className="col-md-4 team-member">
+    <img src="static/images/person2.png" alt="Team Member 1" className="img-fluid rounded-circle mb-3" />
+    <h3>Peter Griffin</h3>
+    <p>CEO</p>
+    <p>Peter is our visionary leader and the driving force behind our hiking adventures. 
+       With a deep passion for the great outdoors, he inspires our team and fellow hikers to explore the most breathtaking trails. 
+       Peter's leadership ensures that every hiking experience is well-organized and filled with unforgettable moments.</p>
+  </div>
+  <div className="col-md-4 team-member">
+    <img src="static/images/woman2.png" alt="Team Member 2" className="img-fluid rounded-circle mb-3" />
+    <h3>Ubah</h3>
+    <p>Event Coordinator</p>
+    <p>Shadrack is our event coordinator, specializing in crafting amazing hiking events that bring hikers together. 
+       His attention to detail ensures that every hike is a seamless and enjoyable experience.
+       With Shadrack's guidance, you can expect well-planned adventures and exciting surprises along the trail.</p>
+  </div>
+  <div className="col-md-4 team-member">
+    <img src="static/images/man1.jpeg" alt="Team Member 3" className="img-fluid rounded-circle mb-3" />
+    <h3>Brian David</h3>
+    <p>Trail Guide</p>
+    <p>Brian, our experienced trail guide, leads hikers through the most scenic and challenging routes. 
+       His extensive knowledge of the wilderness and hiking techniques ensures your safety and enriches your hiking journey. 
+       Brian's passion for nature and storytelling will make your hikes educational and unforgettable.</p>
+  </div>
+</div>
 
-      <h2>Tickets and Ticket Cancellations</h2>
-      <h3>Freemium Tickets</h3>
-      <p>
-        We don’t offer refunds for Tickets purchased for Freemium Drifts. We, however, give people the opportunity to redeem their cash with another ticket/event of an equivalent amount in the same month after which if it’s not claimed, the ticket expires.
-      </p>
-
-      <h3>Premium Tickets</h3>
-      <p>
-        Drifters that wish to cancel more than 48 hours before the hike will be issued a 50% refund of the total hiking fees.
-      </p>
-
-      <h2>Events and Event Locations</h2>
-      <h3>How do you get to the event/hike location?</h3>
-      <p>
-        We normally meet up together at a central location in town (Outside Bata shop - Hilton) and travel together as a group. Those who opt to drive can use the pin location provided on the events brief unless the trail is not self-drive friendly.
-      </p>
-
-      <h2>Payments</h2>
-      <h3>How do I make payments?</h3>
-      <p>
-        Kindly note that we no longer accept any payments made on pay bill, and all payments must be done online through the website. This applies to subscriptions and tickets unless otherwise stated.
-      </p>
-
-      <h2>Subscriptions</h2>
-      <h3>Where do I Subscribe?</h3>
-      <p>
-        Subscription to become a member is done through our website by the 5th of every month for Ksh 1,000. We offer guaranteed secure payments through Mpesa or Visa Card (Flutterwave).
-      </p>
-
-      <h3>What is the duration of my Subscription?</h3>
-      <p>
-        The subscription is renewed monthly at Ksh 1,000 at the start of every month. This means you can attend as many freemium drifts as you can for FREE during that month. Subscribed members also get up to a 20% discount on Premium Drifts.
-      </p>
-
-      <h3>What happens if I fail to attend any Drift after Subscription?</h3>
-      <p>
-        We offer subscribed members a chance to redeem their previous month’s subscription if, for one reason or another, they failed to utilize their subscription. This, however, is non-refundable and expires after one month should you fail to redeem it.
-      </p>
-
-      <h3>How do I book a ticket?</h3>
-      <p>
-        All experiences are booked directly on our website’s experiences page. Once you have created your account, you are free to book any experience whether you are subscribed or not.
-      </p>
-
-      <h3>Can I Subscribe anytime?</h3>
-      <p>
-        Subscription can only be done at the start of the month. It closes on the 5th of every month after which you will be required to pay Ksh 1,000 per experience.
-      </p>
-
-      <h3>What does the 1000 cater for?</h3>
-      <p>
-        Subscription takes care of experience and guide fee and does not include the fare, food, or park fees where applicable.
-      </p>
-
-      <h3>If one paid 3-month membership, can you choose which month that membership applies, or does it have to be 3 consecutive months?</h3>
-      <p>
-        The Quarterly subscription runs across 3 consecutive months and has no redemption for any month not attended.
-      </p>
-
-      <h3>Why didn’t I receive an email confirmation when I made my order?</h3>
-      <p>
-        Good for you for keeping your inbox safe with a tough spam filter. Though our confirmations are not spam, check there first. If the email isn’t there, please text our helpline on Whatsapp or email help@letsdrift.co.ke Don’t forget to add us to your safe Email List.
-      </p>
+        </div>
+      </div>
     </div>
   );
 }
 
-export default About;
+export default AboutUs;

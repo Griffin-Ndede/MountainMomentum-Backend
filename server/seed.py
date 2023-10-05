@@ -9,7 +9,7 @@ with app.app_context():
     hike_data = [
          {
     "name": "Mount Kenya",
-    "image": "https://images.unsplash.com/photo-1531804051321-284e8f40e062",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Mount_Kenya.jpg/1200px-Mount_Kenya.jpg",
     "description": "Mount Kenya is the highest mountain in Kenya and the second-highest in Africa. It offers a challenging and rewarding hiking experience. The diverse landscapes include glaciers, alpine meadows, and dense forests.",
     "distance": "60km",
     "difficulty": "Advanced"

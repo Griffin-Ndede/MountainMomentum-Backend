@@ -2,7 +2,6 @@
 import React, {useEffect, useState}from 'react';
 
 
-
 function Home() {
 const [hikes, setHikes] = useState([]);
 
@@ -20,7 +19,7 @@ const [hikes, setHikes] = useState([]);
       <section className="relative bg-blueGray-50">
         <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
           <div className="absolute top-0 w-full h-full bg-center bg-cover" style={{
-            backgroundImage: "url('/images/background1.jpeg')"
+            backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Mount_Kenya.jpg/1200px-Mount_Kenya.jpg')"
           }}>
             <span id="blackOverlay" className="w-full h-full absolute opacity-75 bg-black"></span>
           </div>

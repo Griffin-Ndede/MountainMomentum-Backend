@@ -215,7 +215,7 @@ h1, p{
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 20px;
-  max-width: 1400px;
+  max-width: 100px;
   margin: 0 auto;
 }
 
@@ -250,21 +250,55 @@ h1, p{
   text-align: center;
 }
 
-/* About.css */
+/* AboutUs.css */
 
-.about-container {
-  font-family: Arial, sans-serif;
+/* Apply styles to the body element */
+body {
+  background-color: white;
+}
+
+/* Apply styles to the jumbotron class */
+.jumbotron {
+  background: url("https://www.datocms-assets.com/55179/1647273702-mt-kenya.jpg?fit=clip&fm=webp&h=900&w=1200") no-repeat center center/cover;
+  color: black;
+  text-align: center;
+  padding: 150px 0;
+}
+
+/* Apply styles to the team-members class */
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Apply styles to the team-member class */
+.team-member {
+  background-color: #f18e33;
+  color: black;
   padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  /* width: 300px; */
+  flex: 0 0 calc(33.333% - 20px); 
+  /* Adjust width as needed for horizontal layout  */
 }
 
-.section-heading {
-  color: blue;
-  text-decoration: underline;
+/* Apply styles to the team-member-name class */
+.team-member-name {
+  font-size: 1.5rem;
+  margin-top: 10px;
 }
 
-.paragraph {
-  font-size: 16px;
-  line-height: 1.6;
+/* Apply styles to the team-member-role class */
+.team-member-role {
+  font-size: 1.2rem;
+  font-style: italic;
 }
 
+/* Apply styles to the team-member-description class */
+.team-member-description {
+  font-size: 1rem;
+  margin-top: 10px;
+}
 

@@ -27,9 +27,6 @@ const NavBar = () => {
           <li>
             <Link to="/about">About</Link>
           </li>
-          <li>
-            <Link to="/service">Service</Link>
-          </li>
           <li className='login'>
             <Link to="/login">
               <FontAwesomeIcon icon={faSignInAlt} /> Login
