@@ -89,7 +89,8 @@ const [hikes, setHikes] = useState([]);
           </div>
         </section>
       </section>
-      <section>
+      <section id='difficulty'>
+        <h3>Select your difficulty</h3>
         <div className='hikes'>
           <ul id='cards'>
             {hikes.map((hike) =>(
@@ -98,6 +99,7 @@ const [hikes, setHikes] = useState([]);
                 <h3>{hike.name}</h3>
                 <h3>Distance: {hike.distance}</h3>
                 <h3>Difficulty: {hike.difficulty}</h3>
+                {/* <button id='booking'>Book</button> */}
               </li>
             ))}
           </ul>

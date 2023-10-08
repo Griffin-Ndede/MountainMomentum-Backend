@@ -1,5 +1,10 @@
 import React from 'react';
 function AboutUs() {
+  const imageStyles = {
+    width: '150px', // Set the desired width here
+    height: 'auto', // Maintain aspect ratio
+    borderRadius: '50%', // Rounded shape for circular avatars
+  };
   return (
     <div>
       <div className="jumbotron">
@@ -18,7 +23,7 @@ function AboutUs() {
         <div className="row">
         <div className="team-members">
   <div className="col-md-4 team-member">
-    <img src="static/images/person2.png" alt="Team Member 1" className="img-fluid rounded-circle mb-3" />
+    <img src="https://as1.ftcdn.net/v2/jpg/02/30/60/82/1000_F_230608264_fhoqBuEyiCPwT0h9RtnsuNAId3hWungP.jpg" alt="Peter Griffin" className="img-fluid rounded-circle mb-3" style={imageStyles} />
     <h3>Peter Griffin</h3>
     <p>CEO</p>
     <p>Peter is our visionary leader and the driving force behind our hiking adventures. 
@@ -26,7 +31,7 @@ function AboutUs() {
        Peter's leadership ensures that every hiking experience is well-organized and filled with unforgettable moments.</p>
   </div>
   <div className="col-md-4 team-member">
-    <img src="static/images/woman2.png" alt="Team Member 2" className="img-fluid rounded-circle mb-3" />
+    <img src="https://static.vecteezy.com/system/resources/previews/014/212/681/original/female-user-profile-avatar-is-a-woman-a-character-for-a-screen-saver-with-emotions-for-website-and-mobile-app-design-illustration-on-a-white-isolated-background-vector.jpg" alt="Ubah" className="img-fluid rounded-circle mb-3" style={imageStyles}/>
     <h3>Ubah</h3>
     <p>Event Coordinator</p>
     <p>Shadrack is our event coordinator, specializing in crafting amazing hiking events that bring hikers together. 
@@ -34,8 +39,8 @@ function AboutUs() {
        With Shadrack's guidance, you can expect well-planned adventures and exciting surprises along the trail.</p>
   </div>
   <div className="col-md-4 team-member">
-    <img src="static/images/man1.jpeg" alt="Team Member 3" className="img-fluid rounded-circle mb-3" />
-    <h3>Brian David</h3>
+    <img src="https://static.vecteezy.com/system/resources/previews/002/002/403/original/man-with-beard-avatar-character-isolated-icon-free-vector.jpg" alt="Brian Kibet" className="img-fluid rounded-circle mb-3" style={imageStyles}/>
+    <h3>Brian Kibet</h3>
     <p>Trail Guide</p>
     <p>Brian, our experienced trail guide, leads hikers through the most scenic and challenging routes. 
        His extensive knowledge of the wilderness and hiking techniques ensures your safety and enriches your hiking journey. 
