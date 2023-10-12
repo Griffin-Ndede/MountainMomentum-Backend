@@ -1,0 +1,332 @@
+/* NavBar.css */
+
+.navbar {
+    color: #f18e33; /* Set the text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* position: fixed; */
+  }
+  
+  .logo-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 50px;
+  }
+  
+  .nav-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #f18e33;
+    /* font-weight: lighter; */
+    font-size: 16px;
+  }
+  
+  .login a {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login a svg {
+    margin-right: 5px;
+  }
+  
+  /* LoginAndRegistration.css */
+
+/* Style the container div */
+.login-registration-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("./images/background1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+  }
+  
+  /* Style the form section */
+  .login-registration-container > div {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: auto;
+  }
+  
+  /* Style the form header */
+  .login-registration-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the input containers */
+  .input-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the labels */
+  .input-container label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: black;
+  }
+  
+  /* Style the input fields */
+  .input-field {
+    width: auto;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    align-items: center;
+  }
+  
+  /* Style the submit button */
+  .submit-button {
+    background-color: #f18e33;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #f18e33;
+  }
+  
+  /* Style the toggle button */
+  .toggle-button {
+    background-color: transparent;
+    border: none;
+    color: #f18e33;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .toggle-button:hover {
+    color: #f18e33;
+  }
+  
+  /* Style the container for the list of hikes */
+.hikes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Start from left to right */
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Style the ul as a flex container */
+#cards {
+  list-style: none; /* Remove default list bullets */
+  display: flex; /* Make it a flex container */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 30px; /* Add space between items */
+}
+
+/* Style each individual card-like element */
+#details {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 20px;
+  flex: 0 0 calc(33.33% - 20px); /* Adjust the width as needed for your layout */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  min-width: 250px; /* Adjust as needed to fit content */
+}
+
+#details:hover {
+  transform: scale(1.02); /* Add a slight scale effect on hover */
+}
+
+/* Style the image within each card */
+#details img {
+  max-width: 100%;
+  height: 75%;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+/* Style the headings within each card */
+#details h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: light;
+}
+ /* styling the login and sign */
+ input[type=text], button, input[type=password]{
+  margin:15px;
+  padding: 7.5px 10px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  border: transparent;
+  background-color: white;
+}
+#signin, #signup, #authpage{
+  background-color: transparent;
+  border-radius: 50px;
+  width: 400px;
+  padding: 10px;
+
+}
+.loginpage{
+  background-image: url('https://www.datocms-assets.com/55179/1647273702-mt-kenya.jpg?fit=clip&fm=webp&h=900&w=1200") no-repeat center center/cover');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+#authpage{
+  margin: auto;
+  padding: 10px;
+  
+}
+h1, p{
+  color: white;
+}
+
+/* Footer.css */
+
+#footer {
+  background-color: #f18e33;
+  color: #fff;
+}
+
+.footer {
+  padding: 30px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1000px; /* Adjust the maximum width as needed */
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px; /* Added padding for better spacing */
+}
+
+.footer-section h2 {
+  color: black; /* Changed text color to black */
+  font-size: 1.5rem;
+}
+
+.footer-section p {
+  font-size: 0.9rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0; /* Adjusted padding for better spacing */
+}
+
+.footer-bottom p {
+  color: #fff;
+  font-size: 0.8rem; /* Adjusted font size for better readability */
+}
+
+
+/* AboutUs.css */
+
+/* Apply styles to the body element */
+body {
+  background-color: white;
+}
+
+/* Apply styles to the jumbotron class */
+.jumbotron {
+  background: url("https://www.datocms-assets.com/55179/1647273702-mt-kenya.jpg?fit=clip&fm=webp&h=900&w=1200") no-repeat center center/cover;
+  color: black;
+  text-align: center;
+  padding: 150px 0;
+}
+
+/* Apply styles to the team-members class */
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Apply styles to the team-member class */
+.team-member {
+  background-color: #f18e33;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  width: 350px;
+  /* flex: 0 0 calc(33.333% - 20px);  */
+  /* Adjust width as needed for horizontal layout  */
+}
+
+/* Apply styles to the team-member-name class */
+.team-member-name {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* Apply styles to the team-member-role class */
+.team-member-role {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* Apply styles to the team-member-description class */
+.team-member-description {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+.lead{
+  color: black;
+}
+#difficulty, h3{
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 10px;
+}
+
